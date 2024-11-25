@@ -1,3 +1,13 @@
+// Names: Masumbuko Alulea, Mike
+// Class: CSC-244 Digital Logic
+// Instructor: Galipeau
+// Date Completed: November 24, 2024
+// Description: This file contains a SystemVerilog module that drives a 7-segment display based on a 4-bit input.
+// The module takes a 4-bit binary input and outputs a 7-bit signal to drive the corresponding segments of the display.
+// If the input is a negative value (based on the most significant bit), the display shows a "-" sign.
+// Otherwise, the input value is displayed on the 7-segment display, with the corresponding segment pattern for digits 0-9 and special handling for values 4-7.
+// This module also includes an enable signal that ensures the display is activated only when needed.
+
 module seven_seg(
     input logic [3:0] a,
     output logic [6:0] s,
