@@ -1,4 +1,3 @@
-
 // Names: Masumbuko Alulea, Mike
 // Class: CSC-244 Digital Logic
 // Instructor: Galipeau
