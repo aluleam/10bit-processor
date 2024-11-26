@@ -1,7 +1,7 @@
 // Names: Masumbuko Alulea, Mike
 // Class: CSC-244 Digital Logic
 // Instructor: Galipeau
-// Date: November 25, 2024
+// Date: November 26, 2024
 // Description: This module handles the output logic for the 10-bit processor. 
 // It determines the values displayed on the LEDs and seven-segment displays based on the current 
 // bus data, register file data, the Peek signal, and the current timestep. The module also controls 
