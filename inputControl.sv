@@ -20,7 +20,18 @@ module inputControl(
     output logic debounced_peek          // Debounced Peek button signal
 );
 
-// TODO:
-////////////////////////////////////////////////////////////////////////////////////////////////
+debounce debouncedP (.A_noisy(peek_signal),.CLK50M(board_clk_50MHz),. A(debounced_peek));
+debounce debouncedClock (.A_noisy(button_clk_input),.CLK50M(board_clk_50MHz),. A(debounced_clk));
+
+assign peek_address = switch_input[1:0];
+
+always_comb begin
+if(enable_bus_write) begin
+    end
+    else begin
+        bus_output = 10'bz;
+    end
+    end
+
 
 endmodule

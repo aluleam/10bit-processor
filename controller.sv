@@ -23,11 +23,29 @@ module controller(
     output logic InstructionRegEnable,  // Loads data into the instruction register
     output logic ResetTimestep,         // Resets the timestep counter
 
+
+    output logic readRam;
+    output logic writeRam;
+    output logic EnableAddress;
+
 );
 
-// TODO: Logic to control the data flow, 
-// like moving data to/from registers, the ALU, or memory, 
-// depending on the current step in the processor.
+parameter 
+    LOAD  = 4'b0000,
+    COPY  = 4'b0001,
+    ADD   = 4'b0010,
+    SUB   = 4'b0011,
+    INV   = 4'b0100,
+    FLIP  = 4'b0101,
+    AND   = 4'b0110,
+    OR    = 4'b0111,
+    XOR   = 4'b1000,
+    LSL   = 4'b1001,
+    LSR   = 4'b1010,
+    ASR   = 4'b1011,
+    ADDI  = 4'b1100,
+    SUBI  = 4'b1101;
+
 
 
 
